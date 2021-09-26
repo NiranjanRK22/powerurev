@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/powerurev/static/css/main.c7f07a67.chunk.css",
+    "main.js": "/powerurev/static/js/main.ccb03d6e.chunk.js",
+    "main.js.map": "/powerurev/static/js/main.ccb03d6e.chunk.js.map",
+    "runtime-main.js": "/powerurev/static/js/runtime-main.0c4d37c2.js",
+    "runtime-main.js.map": "/powerurev/static/js/runtime-main.0c4d37c2.js.map",
+    "static/css/2.818011ed.chunk.css": "/powerurev/static/css/2.818011ed.chunk.css",
+    "static/js/2.11e94a7b.chunk.js": "/powerurev/static/js/2.11e94a7b.chunk.js",
+    "static/js/2.11e94a7b.chunk.js.map": "/powerurev/static/js/2.11e94a7b.chunk.js.map",
+    "static/js/3.c3fbe024.chunk.js": "/powerurev/static/js/3.c3fbe024.chunk.js",
+    "static/js/3.c3fbe024.chunk.js.map": "/powerurev/static/js/3.c3fbe024.chunk.js.map",
+    "index.html": "/powerurev/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/powerurev/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.c7f07a67.chunk.css.map": "/powerurev/static/css/main.c7f07a67.chunk.css.map",
+    "static/js/2.11e94a7b.chunk.js.LICENSE.txt": "/powerurev/static/js/2.11e94a7b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c4d37c2.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.11e94a7b.chunk.js",
+    "static/css/main.c7f07a67.chunk.css",
+    "static/js/main.ccb03d6e.chunk.js"
+  ]
+}
