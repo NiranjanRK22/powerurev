@@ -40,34 +40,21 @@ class Form extends Component  {
     }
     submitForm = async event => {
         const {nameValue, numberValue,emailValue, VehicleType,modelValue,addressValue} = this.state;
-        //console.log(nameValue);
-        //console.log(numberValue);
-        // console.log(VehicleType);
-        // console.log(modelValue);
-        // console.log(addressValue);
-        //console.log(this.state);
         event.preventDefault();
-        //console.log("insert into PowerUrEV.dbo.userData values('"+nameValue+"','',"+numberValue+",'"+addressValue+"')");
-        //const formDetails={nameValue, numberValue, VehicleType,modelValue,addressValue}
-        //const formDetails={nameValue:this.nameValue, numberValue:this.numberValue}//, VehicleType,modelValue,addressValue}
-        //const url="https://apis.ccbp.in/login";
         const url='http://localhost:5000/FormData'
-        axios.post(url,this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
-        axios.post('http://localhost:5000/sendMail',this.state).then((response)=>console.log(response)).catch(err=>console.log(err));
-        // const options={
-        //     method:'GET',
-        //     //body:JSON.stringify(formDetails),
-        //     }
-        // const response=await fetch(url,options);
-        // console.log(response);
-        // //const data=
-        
-        this.setState({nameValue: ""});
-        this.setState({numberValue: ""});
-        this.setState({VehicleType: ""});
-        this.setState({emailValue: ""});
-        this.setState({modelValue: ""});
-        this.setState({addressValue: ""});
+        axios.post(url,this.state)
+            .then((response)=>{
+            console.log(response);
+            this.setState({nameValue: ""});
+            this.setState({numberValue: ""});
+            this.setState({VehicleType: ""});
+            this.setState({emailValue: ""});
+            this.setState({modelValue: ""});
+            this.setState({addressValue: ""});
+        }).catch(err=>console.log(err));
+        axios.post('http://localhost:5000/sendMail',this.state)
+            .then((response)=>console.log(response))
+            .catch(err=>console.log(err));
     }
     render()  {
         const {show, nameValue, numberValue, VehicleType, emailValue,modelValue,addressValue} = this.state
